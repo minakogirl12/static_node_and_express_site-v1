@@ -1,6 +1,5 @@
 //set up dependencies
 const express = require('express');
-const {data} = require('./data.json'); //converts data to a json object
 
 
 //creates express application
@@ -20,25 +19,39 @@ app.get('/', (req, res) => {
     //console.log(res.locals);
     //console.log(data.projects[0].project_name);
 });
+
 //about route 
 app.get('/about', (req, res) => {
     res.render('about');
 });
-//project routes
-app.get('/projects/:id', (req, res) => {
-    const {id} = req.params; //req.params = :id in the web address
-    res.render('project');
-});
+
+//import project routes
+const projects = require('./routes/projects');
+app.use('/projects', projects);
 
 
-//handle errors
-//create error for undefined routes
-
-//creates new error object for 404 errors
+//creates new error object for 404 errors and undefined routes
+//should log error message and set message property to something user friendly
 app.use((req, res, next) => {
     const err = new Error('Not Found');
     err.status = 404;
     next(err);
+});
+
+/**
+ * Global error handler that will deal with any server errors
+ * 
+ */
+//error handler
+app.use((err, req, res, next) =>{
+    console.log(err.message);
+
+    res.locals.error = err;
+    const status = err.status || 500;
+    res.locals.error = err;
+    res.status(err.status);
+    res.render('error', err)
+
 });
 
 
