@@ -2,7 +2,7 @@
 "data": {
     "projects" : [
             {
-            "id": 0,
+            "id": 1,
             "project_name": "Random Quote Generator",
             "description": "This is the Unit 1 project for the Javascript Techdegree. It displays a random quote each time the user either refreshes the page or clicks the 'Show another quote' button",
             "technologies": ["Javascript", "HTML", "CSS"],
@@ -11,36 +11,36 @@
             "image_urls": "/images/random"
             },
             {
-                "id": 1,
+                "id": 2,
                 "project_name": "Data Pagination and Filtering",
-                "description": "This is the Unit 1 project for the Javascript Techdegree. It displays a random quote each time the user either refreshes the page or clicks the 'Show another quote' button",
+                "description": "The Unit 2 project for the Javascript Techdegree. This site demonstrates the ability to dynamically create pagination buttons for a set of data.",
                 "technologies": ["Javascript", "HTML", "CSS"],
                 "live_link": " https://minakogirl12.github.io/Data-Pagination-and-Filtering",
                 "github_link": "https://github.com/minakogirl12/Data-Pagination-and-Filtering",
                 "image_urls": "/images/pagination"
             },
             {
-                "id": 2,
+                "id": 3,
                 "project_name": "Interactive Form",
-                "description": "This is the Unit 1 project for the Javascript Techdegree. It displays a random quote each time the user either refreshes the page or clicks the 'Show another quote' button",
+                "description": "This is the Unit 3 project for the Javascript Techdegree. This a a validated form created dynamically using Javascript.",
                 "technologies": ["Javascript", "HTML", "CSS"],
                 "live_link": "https://minakogirl12.github.io/Interactive-Form",
                 "github_link": "https://github.com/minakogirl12/Interactive-Form",
                 "image_urls": "/images/form"
             },
             {
-                "id": 3,
+                "id": 4,
                 "project_name": "OOP Game Show App",
-                "description": "This is the Unit 1 project for the Javascript Techdegree. It displays a random quote each time the user either refreshes the page or clicks the 'Show another quote' button",
+                "description": "This is the Unit 4 project for the Javascript Techdegree. A word guessing game.",
                 "technologies": ["Javascript", "HTML", "CSS"],
                 "live_link": "https://minakogirl12.github.io/oop_game-v2",
                 "github_link": "https://github.com/minakogirl12/oop_game-v2",
                 "image_urls": "/images/game"
             },
             {
-                "id": 4,
+                "id": 5,
                 "project_name": "Public API Requests",
-                "description": "This is the Unit 1 project for the Javascript Techdegree. It displays a random quote each time the user either refreshes the page or clicks the 'Show another quote' button",
+                "description": "This is the Unit 5 project for the Javascript Techdegree. All about requesting information from another API",
                 "technologies": ["Javascript", "HTML", "CSS"],
                 "live_link": "https://minakogirl12.github.io/public_api_request-v1",
                 "github_link": "https://github.com/minakogirl12/public_api_request-v1",
