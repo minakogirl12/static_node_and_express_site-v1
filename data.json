@@ -21,7 +21,11 @@
                 "technologies": ["Javascript", "HTML", "CSS"],
                 "live_link": " https://minakogirl12.github.io/Data-Pagination-and-Filtering",
                 "github_link": "https://github.com/minakogirl12/Data-Pagination-and-Filtering",
-                "image_urls": "/images/pagination"
+                "image_urls": [
+                    "/images/pagination/pagination_landing.png",
+                    "/images/pagination/pagination_bottom.png",
+                    "/images/pagination/pagination_last.png"
+                ]
             },
             {
                 "id": 3,
@@ -30,7 +34,11 @@
                 "technologies": ["Javascript", "HTML", "CSS"],
                 "live_link": "https://minakogirl12.github.io/Interactive-Form",
                 "github_link": "https://github.com/minakogirl12/Interactive-Form",
-                "image_urls": "/images/form"
+                "image_urls": [
+                    "/images/form/form_landing.png",
+                    "/images/form/form_error.png",
+                    "/images/form/form_options.png"
+                ]
             },
             {
                 "id": 4,
@@ -39,7 +47,11 @@
                 "technologies": ["Javascript", "HTML", "CSS"],
                 "live_link": "https://minakogirl12.github.io/oop_game-v2",
                 "github_link": "https://github.com/minakogirl12/oop_game-v2",
-                "image_urls": "/images/game"
+                "image_urls": [
+                    "/images/game/game_landing.png",
+                    "/images/game/game_start.png",
+                    "/images/game/game_play.png"
+                ]
             },
             {
                 "id": 5,
@@ -48,7 +60,11 @@
                 "technologies": ["Javascript", "HTML", "CSS"],
                 "live_link": "https://minakogirl12.github.io/public_api_request-v1",
                 "github_link": "https://github.com/minakogirl12/public_api_request-v1",
-                "image_urls": "/images/request"
+                "image_urls": [
+                    "/images/request/request_landing.png",
+                    "/images/request/request_search.png",
+                    "/images/request/request_window.png"
+                ]
             }
         ]
     }
