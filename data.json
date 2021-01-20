@@ -57,7 +57,7 @@
                 "id": 5,
                 "project_name": "Public API Requests",
                 "description": "This is the Unit 5 project for the Javascript Techdegree. All about requesting information from another API",
-                "technologies": ["Javascript", "HTML", "CSS"],
+                "technologies": ["Javascript", "HTML", "CSS", "Fetch API"],
                 "live_link": "https://minakogirl12.github.io/public_api_request-v1",
                 "github_link": "https://github.com/minakogirl12/public_api_request-v1",
                 "image_urls": [
