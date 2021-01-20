@@ -8,7 +8,11 @@
             "technologies": ["Javascript", "HTML", "CSS"],
             "live_link": "https://minakogirl12.github.io/Random-Quote-Generator",
             "github_link": "https://github.com/minakogirl12/Random-Quote-Generator",
-            "image_urls": "/images/random"
+            "image_urls": [
+                "/images/random/random_landing.png",
+                "/images/random/random_shotOne.png",
+                "/images/random/random_shotTwo.png"
+            ]
             },
             {
                 "id": 2,

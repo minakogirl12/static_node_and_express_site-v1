@@ -7,7 +7,8 @@ router.get('/:id', (req, res) => {
     console.log(id);
     
     //verify that project exists
-    const projectData = projects[id];
+    const projectData = projects[id-1];
+    console.log(projectData.image_urls);
     res.render('project', projectData);
    
     
