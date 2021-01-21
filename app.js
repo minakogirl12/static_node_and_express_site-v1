@@ -1,6 +1,8 @@
 //set up dependencies
 const express = require('express');
 
+//access to data
+const {data} = require('./data.json'); //converts data to a json object
 
 //creates express application
 const app = express();
@@ -14,10 +16,11 @@ app.use('/static', express.static('public'));
 //index route
 //create a route (path, callback function for route)
 app.get('/', (req, res) => {
-    res.render('index');
-    res.locals = data.projects;
-    //console.log(res.locals);
-    //console.log(data.projects[0].project_name);
+    //console.log(projects);
+    res.locals = data;
+    res.render('index', data.projects);
+    
+    console.log(data);
 });
 
 //about route 
@@ -26,8 +29,8 @@ app.get('/about', (req, res) => {
 });
 
 //import project routes
-const projects = require('./routes/projects');
-app.use('/projects', projects);
+const projectsRoute = require('./routes/projects');
+app.use('/projects', projectsRoute);
 
 
 //creates new error object for 404 errors and undefined routes
