@@ -20,7 +20,7 @@ app.get('/', (req, res) => {
     res.locals = data;
     res.render('index', data.projects);
     
-    console.log(data);
+    //console.log(data);
 });
 
 //about route 

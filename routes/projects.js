@@ -4,7 +4,7 @@ const {data} = require('../data.json'); //converts data to a json object
 const {projects} = data;
 router.get('/:id', (req, res, next) => {
     const {id} = req.params;
-    console.log(id);
+    //console.log(id);
     
     //verify that project exists
     if(isNaN(id) || id === '0' || id > projects.length){
@@ -13,7 +13,7 @@ router.get('/:id', (req, res, next) => {
     }
     else{
         const projectData = projects[id-1];
-        console.log(projectData.image_urls);
+        //console.log(projectData.image_urls);
         res.render('project', projectData);
     }
 
