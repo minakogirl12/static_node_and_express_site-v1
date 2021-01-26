@@ -36,7 +36,7 @@ app.use('/projects', projectsRoute);
 //creates new error object for 404 errors and undefined routes
 //should log error message and set message property to something user friendly
 app.use((req, res, next) => {
-    const err = new Error('Not Found');
+    const err = new Error('Sorry, that page does not exist.');
     err.status = 404;
     next(err);
 });
@@ -48,12 +48,17 @@ app.use((req, res, next) => {
 //error handler
 app.use((err, req, res, next) =>{
     console.log(err.message);
-
-    res.locals.error = err;
-    const status = err.status || 500;
-    res.locals.error = err;
-    res.status(err.status);
-    res.render('error', err)
+    if(err.status === 404){
+        res.render('page-not-found');
+    }
+    else{
+        res.locals.error = err;
+        const status = err.status || 500;
+         res.locals.error = err;
+         res.status(status);
+         err.message = "Something has gone very wrong. Error code: " + status;
+        res.render('error', err)
+    }
 
 });
 

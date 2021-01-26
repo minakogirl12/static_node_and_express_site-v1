@@ -1,6 +1,9 @@
 extends layout
 
 block content
-    h1 Oops! You seem to have encountered and error
+    a(href='/') ← Back
+    h1 Oops! You seem to have encountered an error.
     h2 Error code:
     h2= error.status
+    script
+        | console.error('Something has gone very wrong. Please contact site owner.');

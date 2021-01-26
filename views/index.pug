@@ -4,22 +4,14 @@ block content
   article.grid-container.portfolio-intro
     div
 
-      //- Add a title or heading like My Portfolio, or Hey, Potential Employers, or Let's make the web great together! 
       h1 Dominique's Portfolio
       h2 Where Practice Shows Progress
 
-      //- Add a description for your portfolio, what this project is, it's purpose, what it's supposed to accomplish, etc. 
       p.lead.text-light
         | Greetings! Here you will find a collection of projects to showcase my ablities with various technologies and programming languages. This site itself is a project to highlight skills using Express, Pug, and Javascript. It is my hope that this portfolio will not only show my programming ablities but also, be a testament to my diligence and creativity.
   article.grid-container.portfolio-index
     
     .grid-x.grid-margin-x.small-up-2.medium-up-2.large-up-3
-
-      //- Use the Pug `each` iterator to create a project img, title and link in the markup for each of the projects you are showcasing.  
-      
-      //- Use a combination of interpolation and template literals as needed to dynamically generate the the routes in the href, as well as the img's src and the projects title.
-      
-      //- Here's what the Pug for each project example should look like. 
 
       each project in projects
         .cell
